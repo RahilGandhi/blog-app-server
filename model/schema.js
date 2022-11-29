@@ -16,7 +16,7 @@ const blogSchema=mongoose.Schema({
 },{timestamps:true});
 
 autoIncrement.initialize(mongoose.connection);
-blogSchema.plugin(autoIncrement.plugin,'myBlogs')
+// blogSchema.plugin(autoIncrement.plugin,'myBlogs')
 
 const Blog=mongoose.model('myBlogs',blogSchema)
 export default Blog;

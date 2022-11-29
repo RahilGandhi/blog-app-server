@@ -6,8 +6,8 @@ const router=express.Router();
 router.post('/add',postBlog)
 
 //Fetching All Data
-// router.get('/all',fetchAllBlogs)
-router.get('/', fetchAllBlogs)
+router.get('/all',fetchAllBlogs)
+// router.get('/', fetchAllBlogs)
 
 //Editing Section
 router.get('/edit/:id',getSingleData)
