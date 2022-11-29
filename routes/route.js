@@ -1,12 +1,12 @@
 import express from 'express'
-import {deleteData, postBlog,fetchAllBlogs, getSingleData,editSingleData} from './controls.js';
+import {deleteData, postBlog, fetchAllBlogs, getSingleData, editSingleData} from './controls.js';
 const router=express.Router();
 
 
 router.post('/add',postBlog)
 
 //Fetching All Data
-router.get('/all',fetchAllBlogs)
+// router.get('/all',fetchAllBlogs)
 router.get('/', fetchAllBlogs)
 
 //Editing Section
