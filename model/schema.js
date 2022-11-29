@@ -1,5 +1,4 @@
 import mongoose from 'mongoose'
-import autoIncrement from 'mongoose-auto-increment'
 const blogSchema=mongoose.Schema({
     title:{
         type:String,
@@ -15,7 +14,7 @@ const blogSchema=mongoose.Schema({
     }
 },{timestamps:true});
 
-autoIncrement.initialize(mongoose.connection);
+// autoIncrement.initialize(mongoose.connection);
 // blogSchema.plugin(autoIncrement.plugin,'myBlogs')
 
 const Blog=mongoose.model('myBlogs',blogSchema)
